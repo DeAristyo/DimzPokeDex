@@ -10,20 +10,26 @@
 		A56C903F2B197B85000E5E2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C903E2B197B85000E5E2C /* AppDelegate.swift */; };
 		A56C90412B197B85000E5E2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C90402B197B85000E5E2C /* SceneDelegate.swift */; };
 		A56C90432B197B85000E5E2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C90422B197B85000E5E2C /* ViewController.swift */; };
-		A56C90462B197B85000E5E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56C90442B197B85000E5E2C /* Main.storyboard */; };
 		A56C90482B197B86000E5E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56C90472B197B86000E5E2C /* Assets.xcassets */; };
 		A56C904B2B197B86000E5E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56C90492B197B86000E5E2C /* LaunchScreen.storyboard */; };
+		A56C90592B197DCA000E5E2C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C90582B197DCA000E5E2C /* Network.swift */; };
+		A56C905B2B198060000E5E2C /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C905A2B198060000E5E2C /* NetworkModel.swift */; };
+		F7A5BE98C51B71370E6F294F /* Pods_DimzPokeDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A644F32B1A6C1C2C014D446 /* Pods_DimzPokeDex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		237C0A0D9E0148FDFEE8FE6F /* Pods-DimzPokeDex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DimzPokeDex.debug.xcconfig"; path = "Target Support Files/Pods-DimzPokeDex/Pods-DimzPokeDex.debug.xcconfig"; sourceTree = "<group>"; };
+		4A644F32B1A6C1C2C014D446 /* Pods_DimzPokeDex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DimzPokeDex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56C903B2B197B85000E5E2C /* DimzPokeDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DimzPokeDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56C903E2B197B85000E5E2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56C90402B197B85000E5E2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A56C90422B197B85000E5E2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A56C90452B197B85000E5E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A56C90472B197B86000E5E2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56C904A2B197B86000E5E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56C904C2B197B86000E5E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A56C90582B197DCA000E5E2C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		A56C905A2B198060000E5E2C /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		C7F79554554154F3DACD0C06 /* Pods-DimzPokeDex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DimzPokeDex.release.xcconfig"; path = "Target Support Files/Pods-DimzPokeDex/Pods-DimzPokeDex.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A5BE98C51B71370E6F294F /* Pods_DimzPokeDex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				A56C903D2B197B85000E5E2C /* DimzPokeDex */,
 				A56C903C2B197B85000E5E2C /* Products */,
+				EDC94029298AE19E4024E746 /* Pods */,
+				C59A5744440A42812ADFF42D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,81 @@
 		A56C903D2B197B85000E5E2C /* DimzPokeDex */ = {
 			isa = PBXGroup;
 			children = (
+				A56C90532B197B9F000E5E2C /* Src */,
+				A56C90522B197B8C000E5E2C /* Networking */,
+				A56C90572B197DA8000E5E2C /* Helper */,
 				A56C903E2B197B85000E5E2C /* AppDelegate.swift */,
 				A56C90402B197B85000E5E2C /* SceneDelegate.swift */,
-				A56C90422B197B85000E5E2C /* ViewController.swift */,
-				A56C90442B197B85000E5E2C /* Main.storyboard */,
 				A56C90472B197B86000E5E2C /* Assets.xcassets */,
 				A56C90492B197B86000E5E2C /* LaunchScreen.storyboard */,
 				A56C904C2B197B86000E5E2C /* Info.plist */,
 			);
 			path = DimzPokeDex;
+			sourceTree = "<group>";
+		};
+		A56C90522B197B8C000E5E2C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A56C90582B197DCA000E5E2C /* Network.swift */,
+				A56C905A2B198060000E5E2C /* NetworkModel.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A56C90532B197B9F000E5E2C /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				A56C90562B197D91000E5E2C /* Model */,
+				A56C90552B197C67000E5E2C /* ViewModel */,
+				A56C90542B197C62000E5E2C /* View */,
+				A56C90422B197B85000E5E2C /* ViewController.swift */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		A56C90542B197C62000E5E2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A56C90552B197C67000E5E2C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A56C90562B197D91000E5E2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A56C90572B197DA8000E5E2C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C59A5744440A42812ADFF42D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A644F32B1A6C1C2C014D446 /* Pods_DimzPokeDex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDC94029298AE19E4024E746 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				237C0A0D9E0148FDFEE8FE6F /* Pods-DimzPokeDex.debug.xcconfig */,
+				C7F79554554154F3DACD0C06 /* Pods-DimzPokeDex.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A56C904F2B197B86000E5E2C /* Build configuration list for PBXNativeTarget "DimzPokeDex" */;
 			buildPhases = (
+				F0C8A2D45D288FBECBC641F3 /* [CP] Check Pods Manifest.lock */,
 				A56C90372B197B85000E5E2C /* Sources */,
 				A56C90382B197B85000E5E2C /* Frameworks */,
 				A56C90392B197B85000E5E2C /* Resources */,
+				9B550A7A74D8C808F1348F1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +204,52 @@
 			files = (
 				A56C904B2B197B86000E5E2C /* LaunchScreen.storyboard in Resources */,
 				A56C90482B197B86000E5E2C /* Assets.xcassets in Resources */,
-				A56C90462B197B85000E5E2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B550A7A74D8C808F1348F1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DimzPokeDex/Pods-DimzPokeDex-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DimzPokeDex/Pods-DimzPokeDex-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DimzPokeDex/Pods-DimzPokeDex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0C8A2D45D288FBECBC641F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DimzPokeDex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A56C90372B197B85000E5E2C /* Sources */ = {
@@ -140,6 +258,8 @@
 			files = (
 				A56C90432B197B85000E5E2C /* ViewController.swift in Sources */,
 				A56C903F2B197B85000E5E2C /* AppDelegate.swift in Sources */,
+				A56C90592B197DCA000E5E2C /* Network.swift in Sources */,
+				A56C905B2B198060000E5E2C /* NetworkModel.swift in Sources */,
 				A56C90412B197B85000E5E2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +267,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A56C90442B197B85000E5E2C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A56C90452B197B85000E5E2C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A56C90492B197B86000E5E2C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,17 +399,18 @@
 		};
 		A56C90502B197B86000E5E2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 237C0A0D9E0148FDFEE8FE6F /* Pods-DimzPokeDex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 75VHUVZJF4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DimzPokeDex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,17 +428,18 @@
 		};
 		A56C90512B197B86000E5E2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7F79554554154F3DACD0C06 /* Pods-DimzPokeDex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 75VHUVZJF4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DimzPokeDex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
